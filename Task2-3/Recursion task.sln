@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClockTask", "ClockTask\ClockTask.csproj", "{4A9E9933-70BC-4B70-B0AB-D38E966D0090}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion task", "Recursion task\Recursion task.csproj", "{08975ACA-8732-4A32-9B05-59445FAB0608}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4A9E9933-70BC-4B70-B0AB-D38E966D0090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A9E9933-70BC-4B70-B0AB-D38E966D0090}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A9E9933-70BC-4B70-B0AB-D38E966D0090}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A9E9933-70BC-4B70-B0AB-D38E966D0090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08975ACA-8732-4A32-9B05-59445FAB0608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08975ACA-8732-4A32-9B05-59445FAB0608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08975ACA-8732-4A32-9B05-59445FAB0608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08975ACA-8732-4A32-9B05-59445FAB0608}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BE048513-D637-46B4-8A5F-35E01DD03DB8}
+		SolutionGuid = {BEB52177-2C56-407F-89C8-F6E88F976C0E}
 	EndGlobalSection
 EndGlobal
