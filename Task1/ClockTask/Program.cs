@@ -1,5 +1,6 @@
 ﻿using System;
 
+namespace ClockTask;
 class ClockTask
 {
     static void Main(string[] args)
