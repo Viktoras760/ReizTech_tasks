@@ -17,9 +17,9 @@ class ClockTask
         while (true)
         {
             Console.Write("Enter hour: ");
-            if (int.TryParse(Console.ReadLine(), out hour) && (hour >= 0 && hour <= 11))
+            if (int.TryParse(Console.ReadLine(), out hour) && (hour >= 0 && hour <= 12))
                 break;
-            Console.WriteLine("Invalid input. Please enter a valid hour (0-11)");
+            Console.WriteLine("Invalid input. Please enter a valid hour (0-12)");
         }
         return hour;
     }
@@ -39,6 +39,14 @@ class ClockTask
 
     static double CalculateAngle(int hour, int minutes)
     {
+        if (hour == 0)
+        {
+            hour = 12;
+        }
+        if (hour == 12 && minutes == 0)
+        {
+            return 0;
+        }
         double angle = Math.Abs((hour * 30 + (0.5 * minutes)) - (minutes * 6));
         return Math.Min(angle, 360 - angle);
     }
