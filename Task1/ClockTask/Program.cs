@@ -19,7 +19,7 @@ class ClockTask
         {
             Console.Write("Enter hour: ");
             string input = Console.ReadLine() ?? "";
-            if (input != null && Regex.IsMatch(input, @"^[1-9]\d{0,1}$") && int.TryParse(input, out hour) && (hour >= 1 && hour <= 12))
+            if (!string.IsNullOrEmpty(input) && Regex.IsMatch(input, @"^[1-9]\d{0,1}$") && int.TryParse(input, out hour) && (hour >= 1 && hour <= 12))
                 break;
             Console.WriteLine("Invalid input. Please enter a valid hour (1-12) with max 2 digits and no leading zero");
         }
@@ -33,9 +33,9 @@ class ClockTask
         {
             Console.Write("Enter minutes: ");
             string input = Console.ReadLine() ?? "";
-            if (input != null && Regex.IsMatch(input, @"^[0-9]\d{0,1}$") && int.TryParse(input, out minutes) && (minutes >= 0 && minutes <= 59))
+            if (!string.IsNullOrEmpty(input) && int.TryParse(input, out minutes) && (minutes >= 0 && minutes <= 59) && (minutes == 0 || Regex.IsMatch(input, @"^[1-9]\d{0,1}$")))
                 break;
-            Console.WriteLine("Invalid input. Please enter a valid minute (0-59) with max 2 digits and no leading zero");
+            Console.WriteLine("Invalid input. Please enter a valid minute (0-59) with max 2 digits and no leading zero (except 0)");
         }
         return minutes;
     }
